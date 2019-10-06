@@ -1,0 +1,19 @@
+{
+  "name": "em_template",
+  "version": "0.0.1",
+  "description": "Emscripten Node Template .",
+  "scripts": {
+    "build": "emcc --bind -std=c++14 src/wasm.cpp -s WASM=1 -s SINGLE_FILE=1 -O3 -o src/wasm.js",
+    "test": ""
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/..."
+  },
+  "author": "Gregory DiSisto",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.6.0"
+  }
+}
